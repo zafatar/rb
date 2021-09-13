@@ -1,0 +1,22 @@
+- name: Home
+  page: /
+  link: /
+- name: News
+  page: /news
+  link: /news.html
+- name: Team
+  page: /team
+  link: /team.html
+- name: Publications
+  page: /publications
+  link: /publications.html
+- name: Teaching
+  page: /teaching
+  link: /teaching.html
+- name: Thesis
+  page: /thesis
+  link: /thesis.html
+- name: Projects
+  page: /projects
+  link: /projects.html
+
