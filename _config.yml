@@ -1,5 +1,12 @@
+collections_dir: content
 collections:
-  team_members:
+  team:
     output: true
-  teaching_courses:
+    sort_by: order
+    permalink: /:collection/members/:name
+  teaching_current_semester:
     output: true
+    permalink: /teaching/:path
+  teaching_past_semesters:
+    output: true
+    permalink: /teaching/:path

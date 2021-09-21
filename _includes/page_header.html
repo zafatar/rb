@@ -9,25 +9,13 @@
             <div class="row no-gutters">
               <div class="col-lg-8 text-center text-lg-left">
                 <div class="text-color mr-3 pt-1">
-                TU Berlin / Faculty of EE and CS / Remote Sensing Image Analysis Group
+                TU Berlin / Faculty of EECS / Remote Sensing Image Analysis Group
                 </div>
-                <!-- <a class="text-color mr-3" href=""><strong>CALL</strong></a> -->
               </div>
               <div class="col-lg-4 text-center text-lg-right">
                 <ul class="list-inline d-inline">
-                  <!-- <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
-                  <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-                  <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
-                  <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li> -->
                   <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="/how-to-find-us"><i class="ti-location-pin"></i> How to find us</a></li>
                 </ul>
-                <!-- <ul class="list-inline">
-                  <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
-                  <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
-                  <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
-                  <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
-                  <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
-                </ul> -->
               </div>
             </div>
           </div>
@@ -39,7 +27,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
               <a class="navbar-brand" href="/"><img src="/assets/images/logo/TU-Berlin.svg" alt="logo" height="70px"></a>
               <a class="navbar-brand" href="/"><img src="/assets/images/logo/RSiM_Logo_1.png" alt="logo" height="50px"></a>
-              <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+              <button class="navbar-toggler rounded-1 border-1" style="border-color: 1px solid #000;" type="button" data-toggle="collapse" data-target="#navigation"
                 aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -49,7 +37,7 @@
 
                   {% for item in site.data.nav %}
                   <li class="nav-item {% if page.url == item.link %} active{% endif %} @@{{ item.name }}">
-                    <a class="nav-link" href="{{ item.link }}">
+                    <a class="nav-link" href="{{ item.page }}">
                       {{ item.name }}
                     </a>
                   </li>
