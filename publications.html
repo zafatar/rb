@@ -14,5 +14,8 @@ title: Publications
             </div>
           </div>
 
+        {% for item in page.ref %}
+        {{ forloop.index }}. {{ item }}
+        {% endfor %}
     </div>
 </section>
